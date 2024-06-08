@@ -18,7 +18,7 @@ import React, {useMemo, useState} from 'react'
 import {useForm} from 'react-hook-form'
 import {z} from 'zod'
 
-import Logo from '../../../../public/cypresslogo.svg'
+import Logo from '../../../../public/images/logo.png'
 import Loader from '@/components/global/Loader'
 import {Alert, AlertDescription, AlertTitle} from '@/components/ui/alert'
 import {MailCheck} from 'lucide-react'
@@ -100,13 +100,7 @@ const Signup = () => {
           w-full
           items-center"
         >
-          <Image src={Logo} alt="cypress Logo" width={50} height={50} />
-          <span
-            className="text-4xl
-          font-semibold first-letter:ml-2 dark:text-white"
-          >
-            cypress.
-          </span>
+          <Image src={Logo} alt="Sendtype Logo" width={150} height={150} />
         </Link>
         <FormDescription
           className="
@@ -168,7 +162,7 @@ const Signup = () => {
         {submitError && <FormMessage>{submitError}</FormMessage>}
         <span className="self-container">
           Already have an account?{' '}
-          <Link href="/login" className="text-primary">
+          <Link href="/login" className="text-primary text-primary-blue-400">
             Login
           </Link>
         </span>

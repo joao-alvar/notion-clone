@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/form'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../../../../public/cypresslogo.svg'
+import Logo from '../../../../public/images/logo.png'
 import {Input} from '@/components/ui/input'
 import {Button} from '@/components/ui/button'
 import Loader from '@/components/global/Loader'
@@ -62,13 +62,7 @@ const LoginPage = () => {
           w-full
           items-center"
         >
-          <Image src={Logo} alt="cypress Logo" width={50} height={50} />
-          <span
-            className="text-4xl
-          font-semibold first-letter:ml-2 dark:text-white"
-          >
-            cypress.
-          </span>
+          <Image src={Logo} alt="Sendtype Logo" width={150} height={150} />
         </Link>
         <FormDescription
           className="
@@ -113,7 +107,7 @@ const LoginPage = () => {
         </Button>
         <span className="self-container">
           Dont have an account?{' '}
-          <Link href="/signup" className="text-primary">
+          <Link href="/signup" className="text-primary text-primary-blue-400">
             Sign Up
           </Link>
         </span>

@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
-import Logo from '../../../public/logo.png'
+import Logo from '../../../public/images/logo.png'
 
 import {
   NavigationMenu,
@@ -78,14 +78,7 @@ const Header = () => {
         className="justify-left flex w-full
         items-center gap-2"
       >
-        <Image src={Logo} alt="Cypress Logo" width={25} height={25} />
-        <span
-          className="font-semibold
-          dark:text-white
-        "
-        >
-          cypress.
-        </span>
+        <Image src={Logo} alt="Sendtype Logo" width={140} height={140} />
       </Link>
       <NavigationMenu className="hidden md:block">
         <NavigationMenuList className="gap-6">
