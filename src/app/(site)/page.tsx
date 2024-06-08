@@ -13,6 +13,7 @@ import clsx from 'clsx'
 import CustomCard from '@/components/landing-page/custom-card'
 import {Avatar, AvatarFallback, AvatarImage} from '@/components/ui/avatar'
 import {CardContent, CardDescription, CardTitle} from '@/components/ui/card'
+import Footer from '@/components/landing-page/footer'
 
 const HomePage = () => {
   return (
@@ -243,7 +244,7 @@ const HomePage = () => {
                   "
                     >
                       <Avatar>
-                        <AvatarImage src={`/avatars/${index + 1}.png`} />
+                        <AvatarImage src={`/images/avatars/${index + 1}.png`} />
                         <AvatarFallback>AV</AvatarFallback>
                       </Avatar>
                       <div>
@@ -381,6 +382,15 @@ const HomePage = () => {
             />
           ))}
         </div>
+      </section>
+
+      <section
+        className="mt-20
+        px-4
+        sm:px-6
+      "
+      >
+        <Footer />
       </section>
     </>
   )
