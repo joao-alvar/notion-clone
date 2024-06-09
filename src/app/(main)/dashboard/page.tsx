@@ -17,8 +17,7 @@ const DashboardPage = async () => {
   if (!user) return
 
   const workspace = await db.query.workspaces.findFirst({
-    where: (workspace: {workspaceOwner: any}, {eq}: any) =>
-      eq(workspace.workspaceOwner, user.id),
+    where: (workspace, {eq}) => eq(workspace.workspaceOwner, user.id),
   })
 
   const {data: subscription, error: subscriptionError} =
@@ -37,7 +36,7 @@ const DashboardPage = async () => {
         bg-background
   "
       >
-        <DashboardSetup user={user} />
+        <DashboardSetup user={user} subscription={subscription} />
       </div>
     )
 
