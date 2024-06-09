@@ -8,6 +8,13 @@
       "when": 1717887229393,
       "tag": "0000_chilly_redwing",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1717950891453,
+      "tag": "0001_clumsy_lethal_legion",
+      "breakpoints": true
     }
   ]
 }
