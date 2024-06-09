@@ -37,7 +37,7 @@ const DashboardPage = async () => {
         bg-background
   "
       >
-        <DashboardSetup user={user} subscription={subscription} />
+        <DashboardSetup user={user} />
       </div>
     )
 

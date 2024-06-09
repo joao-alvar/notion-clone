@@ -18,7 +18,13 @@
     "start": "next start",
     "lint": "next lint prettier --check .",
     "format": "npx prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "push": "drizzle-kit push",
+    "pull": "drizzle-kit introspect ",
+    "generate": "drizzle-kit generate",
+    "drop": "drizzle-kit drop",
+    "check": "drizzle-kit check",
+    "up": "drizzle-kit up"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
