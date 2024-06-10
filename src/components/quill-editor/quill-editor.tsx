@@ -148,26 +148,30 @@ const QuillEditor: React.FC<QuillEditorProps> = ({
     return `${workspaceBreadCrumb} ${folderBreadCrumb} ${fileBreadCrumb}`
   }, [state, pathname, workspaceId])
 
-  //
-  const wrapperRef = useCallback(async (wrapper: any) => {
-    if (typeof window !== 'undefined') {
-      if (wrapper === null) return
-      wrapper.innerHTML = ''
-      const editor = document.createElement('div')
-      wrapper.append(editor)
-      const Quill = (await import('quill')).default
-      const QuillCursors = (await import('quill-cursors')).default
-      Quill.register('modules/cursors', QuillCursors)
-      const q = new Quill(editor, {
-        theme: 'snow',
-        modules: {
-          toolbar: TOOLBAR_OPTIONS,
-          cursors: {
-            transformOnTextChange: true,
+  const wrapperRef = useCallback((wrapper: HTMLDivElement | null) => {
+    if (typeof window !== 'undefined' && wrapper !== null) {
+      // Create an async function to handle the Quill setup
+      const initializeQuill = async () => {
+        wrapper.innerHTML = ''
+        const editor = document.createElement('div')
+        wrapper.append(editor)
+        const Quill = (await import('quill')).default
+        const QuillCursors = (await import('quill-cursors')).default
+        Quill.register('modules/cursors', QuillCursors)
+        const q = new Quill(editor, {
+          theme: 'snow',
+          modules: {
+            toolbar: TOOLBAR_OPTIONS,
+            cursors: {
+              transformOnTextChange: true,
+            },
           },
-        },
-      })
-      setQuill(q)
+        })
+        setQuill(q)
+      }
+
+      // Call the async function without awaiting it
+      initializeQuill()
     }
   }, [])
 
@@ -732,7 +736,7 @@ const QuillEditor: React.FC<QuillEditorProps> = ({
             {dirType.toUpperCase()}
           </span>
         </div>
-        <div id="container" className="max-w-[800px]" ref={wrapperRef}></div>
+        <div id="container" className="max-w-[800px]" ref={wrapperRef} />
       </div>
     </>
   )
