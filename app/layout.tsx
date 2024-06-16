@@ -12,22 +12,44 @@ import './globals.css'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata: Metadata = {
-  title: 'Jotion',
+  title: 'Sendtype',
   description: 'The connected workspace where better, faster work happens.',
+  metadataBase: new URL('https://sendtype.vercel.app'),
   icons: {
-    icon: [
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon.ico',
+    apple: [
       {
-        media: '(prefers-color-scheme: light)',
-        url: '/logo.png',
-        href: '/logo.png',
+        url: '/favicon/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png',
+      },
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        url: '/favicon/favicon.ico',
+        sizes: '16x16',
       },
       {
-        media: '(prefers-color-scheme: dark)',
-        url: '/logo-dark.png',
-        href: '/logo-dark.png',
+        rel: 'icon',
+        type: 'image/png',
+        url: '/favicon/favicon-32x32.png',
+        sizes: '32x32',
       },
     ],
   },
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/en',
+    },
+  },
+}
+
+export const viewport = {
+  themeColor: '#ffffff',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

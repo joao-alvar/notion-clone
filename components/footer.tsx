@@ -1,6 +1,6 @@
 import {Button} from '@/components/ui/button'
 
-import {Logo} from './logo'
+import {Logo} from '../app/(marketing)/_components/logo'
 
 export const Footer = () => {
   return (
@@ -8,10 +8,22 @@ export const Footer = () => {
       <Logo />
       <div className="flex w-full items-center justify-between gap-x-2 text-muted-foreground md:ml-auto md:justify-end">
         <Button variant="ghost" size="sm">
-          Privacy Policy
+          <a
+            href="https://github.com/joao-alvar"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            GitHub
+          </a>
         </Button>
         <Button variant="ghost" size="sm">
-          Terms & Conditions
+          <a
+            href="https://victor-alvar.vercel.app"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Website
+          </a>
         </Button>
       </div>
     </div>

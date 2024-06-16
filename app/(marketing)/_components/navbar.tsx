@@ -1,5 +1,6 @@
 'use client'
 
+import {useState, useEffect} from 'react'
 import {useConvexAuth} from 'convex/react'
 import {SignInButton, UserButton} from '@clerk/clerk-react'
 import Link from 'next/link'
@@ -14,7 +15,16 @@ import {Logo} from './logo'
 
 export const Navbar = () => {
   const {isAuthenticated, isLoading} = useConvexAuth()
+  const [mounted, setMounted] = useState(false)
   const scrolled = useScrollTop()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null // or a loading spinner or skeleton screen
+  }
 
   return (
     <div
@@ -34,14 +44,14 @@ export const Navbar = () => {
               </Button>
             </SignInButton>
             <SignInButton mode="modal">
-              <Button size="sm">Get Jotion free</Button>
+              <Button size="sm">Get Sendtype free</Button>
             </SignInButton>
           </>
         )}
         {isAuthenticated && !isLoading && (
           <>
             <Button variant="ghost" size="sm" asChild>
-              <Link href="/documents">Enter Jotion</Link>
+              <Link href="/documents">Enter Sendtype</Link>
             </Button>
             <UserButton afterSignOutUrl="/" />
           </>
