@@ -10,7 +10,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: '**',
-        domains: ['files.edgestore.dev'],
       },
     ],
   },
