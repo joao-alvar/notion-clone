@@ -28,20 +28,20 @@ const Editor = ({onChange, initialContent, editable}: EditorProps) => {
   }
 
   const editor: BlockNoteEditor = useCreateBlockNote({
-    editable,
     initialContent: initialContent
       ? (JSON.parse(initialContent) as PartialBlock[])
       : undefined,
-    onSelectionChange: (editor: any) => {
-      onChange(JSON.stringify(editor.topLevelBlocks, null, 2))
-    },
     uploadFile: handleUpload,
   })
 
   return (
     <div>
       <BlockNoteView
+        editable={editable}
         editor={editor}
+        onChange={() => {
+          JSON.stringify(editor.document, null, 2)
+        }}
         theme={resolvedTheme === 'dark' ? 'dark' : 'light'}
       />
     </div>
