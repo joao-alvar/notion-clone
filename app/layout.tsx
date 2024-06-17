@@ -60,10 +60,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <EdgeStoreProvider>
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
+              defaultTheme="light"
               enableSystem
               disableTransitionOnChange
-              storageKey="jotion-theme-2"
+              storageKey="sendtype-theme-2"
             >
               <Toaster position="bottom-center" />
               <ModalProvider />
