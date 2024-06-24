@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: 'https://crucial-raptor-44.clerk.accounts.dev',
+      domain: process.env.CONVEX_ISSUER_URL,
       applicationID: 'convex',
     },
   ],

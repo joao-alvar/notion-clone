@@ -6,19 +6,10 @@ import {useConvexAuth} from 'convex/react'
 import {Spinner} from '@/components/spinner'
 import Link from 'next/link'
 import {SignInButton} from '@clerk/clerk-react'
-import {useState, useEffect} from 'react'
+// import {useState, useEffect} from 'react'
 
 export const Heading = () => {
   const {isAuthenticated, isLoading} = useConvexAuth()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null // or a loading spinner or skeleton screen
-  }
 
   return (
     <div
