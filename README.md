@@ -51,7 +51,7 @@ Sendtype é uma plataforma versátil que centraliza todas as suas necessidades d
 
 Com Notion, você tem a liberdade e a flexibilidade para estruturar suas atividades do jeito que melhor funciona para você, garantindo eficiência e produtividade máximas.
 
-<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
@@ -93,7 +93,7 @@ A decisão de usar essa stack para este projeto foi baseada em vários fatores i
    <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white" alt="React Hooks" />
   </div>
 
-<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
@@ -147,7 +147,7 @@ Siga esses passos para rodar o app localmente com facilidade.
    npx convex dev
    ```
 
-<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
@@ -165,7 +165,7 @@ Siga esses passos para rodar o app localmente com facilidade.
 - Pesquisar
   - Use a barra de pesquisa para encontrar notas e páginas rapidamente.  
 
-<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Estrutura dos Arquivos
 
@@ -188,4 +188,4 @@ Sendtype
 
 * Notion fonte de inspiração [Notion](https://notion.so)
 
-<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
