@@ -31,25 +31,13 @@
 <details>
   <summary>Conteúdo</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">Sobre o Projeto</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Começando</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#sobre-o-projeto">Sobre o Projeto</a></li>
+    <li><a href="#tecnologias-usadas">Tecnologias Usadas</a></li>
+    <li><a href="#começando">Começando</a></li>
+    <li><a href="#uso">Uso</a></li></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#estrutura-dos-arquivos">Estrutura dos Arquivos</a></li>
+    <li><a href="#reconhecimentos">Reconhecimentos</a></li>
   </ol>
 </details>
 
@@ -64,11 +52,11 @@ Sendtype é uma plataforma versátil que centraliza todas as suas necessidades d
 
 Com Notion, você tem a liberdade e a flexibilidade para estruturar suas atividades do jeito que melhor funciona para você, garantindo eficiência e produtividade máximas.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
 
 
 
-## Tecnologias usadas
+## Tecnologias Usadas
 
 A decisão de usar essa stack para este projeto foi baseada em vários fatores importantes que se alinham com as necessidades de um aplicativo web semelhante ao Notion.
 
@@ -106,7 +94,7 @@ A decisão de usar essa stack para este projeto foi baseada em vários fatores i
    <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white" alt="React Hooks" />
   </div>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
 
 
 
@@ -160,7 +148,7 @@ Siga esses passos para rodar o app localmente com facilidade.
    npx convex dev
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
 
 
 
@@ -178,9 +166,9 @@ Siga esses passos para rodar o app localmente com facilidade.
 - Pesquisar
   - Use a barra de pesquisa para encontrar notas e páginas rapidamente.  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
 
-## Estrutura dos arquivos
+## Estrutura dos Arquivos
 
 <!-- FILE STRUCTURE -->
 Sendtype
@@ -201,4 +189,4 @@ Sendtype
 
 * Notion fonte de inspiração [Notion](https://notion.so)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">de volta ao topo</a>)</p>
