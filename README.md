@@ -35,7 +35,6 @@
     <li><a href="#tecnologias-usadas">Tecnologias Usadas</a></li>
     <li><a href="#começando">Começando</a></li>
     <li><a href="#uso">Uso</a></li></li>
-    <li><a href="#installation">Installation</a></li>
     <li><a href="#estrutura-dos-arquivos">Estrutura dos Arquivos</a></li>
     <li><a href="#reconhecimentos">Reconhecimentos</a></li>
   </ol>
