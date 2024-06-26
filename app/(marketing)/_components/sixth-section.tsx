@@ -104,7 +104,7 @@ const SixthSection = () => {
 
   return (
     <>
-      <div className="flex  flex-col items-center justify-center pt-20 xl:pt-24 ">
+      <div className="flex flex-col items-center justify-center pt-20 xl:pt-24">
         <div className="w-3/4 text-center text-3xl font-semibold xl:w-1/2 xl:text-5xl">
           Join a global movement. Unleash your creativity.
         </div>
@@ -115,7 +115,7 @@ const SixthSection = () => {
         <div className="flex items-center text-sky-500 hover:cursor-pointer hover:underline">
           Learn more <PiArrowRight className="ml-3 text-sm " />
         </div>
-        <div className="mx-auto mt-8 grid grid-cols-12 gap-4 px-8 md:row-span-2  md:w-full md:px-16 xl:w-3/4 xl:gap-6 xl:px-0 2xl:w-[55%]">
+        <div className="mx-auto mt-8 grid grid-cols-12 gap-4 px-8 md:row-span-2 md:w-full md:px-16 xl:w-3/4 xl:gap-6 xl:px-0 2xl:w-[55%]">
           {tabs.map((tab, index) => (
             <div
               key={index}
@@ -136,7 +136,7 @@ const SixthSection = () => {
             >
               {index <= 2 ? (
                 <div className="flex flex-col">
-                  <div className=" text-5xl font-semibold text-sky-600">
+                  <div className="text-5xl font-semibold text-sky-600">
                     {tab.text}
                   </div>
                   <div className="text-sm">{tab.subtext}</div>
@@ -151,24 +151,24 @@ const SixthSection = () => {
                       width={1025}
                       height={500}
                       alt="logo"
-                      className="w-full  rounded-xl p-10 xl:p-20"
+                      className="w-full rounded-xl p-10 xl:p-20"
                     />
                   </div>
                 </div>
               ) : index === 5 ? (
                 <>
                   {tab.images && (
-                    <div className="flex flex-col items-center justify-center ">
+                    <div className="flex flex-col items-center justify-center">
                       <Image
                         src={tab.images[activeImageIndex].picture}
                         alt={`${tab.images[activeImageIndex].title} Image`}
                         width={1025}
                         height={500}
-                        className="w-full rounded-xl "
+                        className="w-full rounded-xl"
                       />
 
                       <div>
-                        <div className="mt-10 pb-4 text-xl font-semibold  md:mt-0">
+                        <div className="mt-10 pb-4 text-xl font-semibold md:mt-0">
                           {tab.images[activeImageIndex].title}
                         </div>
                       </div>
@@ -180,8 +180,8 @@ const SixthSection = () => {
                             onClick={() => handleDotClick(index)}
                             className={`${
                               index === activeImageIndex
-                                ? 'rounded-full bg-green-400 p-2 '
-                                : '  rounded-full bg-blue-400 p-2'
+                                ? 'rounded-full bg-green-400 p-2'
+                                : 'rounded-full bg-blue-400 p-2'
                             }  `}
                           ></div>
                         ))}
@@ -192,7 +192,7 @@ const SixthSection = () => {
               ) : (
                 index > 5 && (
                   <>
-                    <div className="flex  flex-col">
+                    <div className="flex flex-col">
                       <Image
                         src={tab.profile || ''}
                         width={500}
@@ -201,9 +201,9 @@ const SixthSection = () => {
                         className="h-10 w-10 rounded-full border p-1"
                       />
                     </div>
-                    <div className="text-xl font-normal ">{tab.userName}</div>
-                    <div className="text-sm font-normal ">{tab.userHandle}</div>
-                    <div className="mt-10 pb-4 text-sm font-normal  md:mt-0">
+                    <div className="text-xl font-normal">{tab.userName}</div>
+                    <div className="text-sm font-normal">{tab.userHandle}</div>
+                    <div className="mt-10 pb-4 text-sm font-normal md:mt-0">
                       {tab.userText}
                     </div>
                   </>

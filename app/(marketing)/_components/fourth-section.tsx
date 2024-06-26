@@ -68,18 +68,18 @@ const FourthSection = () => {
 
   return (
     <>
-      <div className="flex flex-col  items-center justify-center pt-20 xl:py-32">
-        <div className="flex items-center justify-center text-3xl font-semibold xl:text-5xl">
+      <div className="flex flex-col items-center justify-center pt-20 xl:py-32">
+        <div className="flex items-center justify-center text-3xl font-semibold xl:text-5xl xsm:w-10/12 xsm:text-center">
           Powerful building blocks
         </div>
-        <div className="mx-auto mt-8  grid gap-4  px-8  md:row-span-1 md:w-full  md:grid-cols-2 md:px-16 xl:w-3/4 xl:grid-cols-4  xl:gap-6 xl:px-0 2xl:w-[55%]">
+        <div className="mx-auto mt-8 grid gap-4 px-8 md:row-span-1 md:w-full md:grid-cols-2 md:px-16 xl:w-3/4 xl:grid-cols-4 xl:gap-6 xl:px-0 2xl:w-[55%]">
           {tabs.map((tab, index) => (
             <div
               key={index}
               className={`${
                 index === 0
-                  ? ' flex-col md:col-span-2  xl:col-span-4   xl:row-span-3  xl:flex-col'
-                  : 'flex-col xl:col-span-2 xl:row-span-3 '
+                  ? 'flex-col md:col-span-2 xl:col-span-4 xl:row-span-3 xl:flex-col'
+                  : 'flex-col xl:col-span-2 xl:row-span-3'
               } flex rounded-xl bg-[#f6f5f4]  p-6 `}
             >
               <div className="flex flex-col ">
@@ -95,11 +95,7 @@ const FourthSection = () => {
                       alt={`${tab.images[activeImageIndex].title} Image`}
                       width={500}
                       height={500}
-                      className="
-             mx-auto my-10 flex justify-center rounded-xl
-             xl:my-16
-
-                   "
+                      className="mx-auto my-10 flex justify-center rounded-xl xl:my-16"
                     />
 
                     <div className="mx-auto grid grid-cols-5 gap-1 lg:grid-cols-5 xl:w-1/2 xl:grid-cols-6 xl:space-x-2">
@@ -109,8 +105,8 @@ const FourthSection = () => {
                           onClick={() => setActiveImageIndex(index)}
                           className={`${
                             index === activeImageIndex
-                              ? 'flex items-center justify-center rounded-md bg-[#dbd9d9] p-1 '
-                              : '  items-center justify-center rounded-md bg-[#f6f5f4] p-1 hover:bg-[#eae7e7] '
+                              ? 'flex items-center justify-center rounded-md bg-[#dbd9d9] p-1'
+                              : 'items-center justify-center rounded-md bg-[#f6f5f4] p-1 hover:bg-[#eae7e7]'
                           }  `}
                         >
                           <div className=" flex items-center justify-center text-sm">
@@ -142,7 +138,7 @@ const FourthSection = () => {
 
         <div
           className={cn(
-            'flex items-center justify-center px-8 pt-6 text-center text-xl md:w-2/3 md:px-8  xl:w-1/2 xl:py-10 xl:text-2xl ',
+            'flex items-center justify-center px-8 pt-6 text-center text-xl md:w-2/3 md:px-8  xl:w-1/2 xl:py-10 xl:text-2xl',
             font.className
           )}
         >
@@ -160,7 +156,7 @@ const FourthSection = () => {
           />
 
           <div className="m text-center">
-            <div className="pt-4  text-sm font-semibold">Carlos Hernandez</div>
+            <div className="pt-4  text-sm font-semibold">Rodrigo Hernandez</div>
             <div className="text-sm">Marketing Director, Palium Software</div>
           </div>
         </div>

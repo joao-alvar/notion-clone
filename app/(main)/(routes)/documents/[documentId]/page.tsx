@@ -2,7 +2,7 @@
 
 import {useMutation, useQuery} from 'convex/react'
 import dynamic from 'next/dynamic'
-import {useMemo} from 'react'
+import {useMemo, useState} from 'react'
 
 import {api} from '@/convex/_generated/api'
 import {Id} from '@/convex/_generated/dataModel'
@@ -28,7 +28,7 @@ const DocumentIdPage = ({params}: DocumentIdPageProps) => {
 
   const update = useMutation(api.documents.update)
 
-  const onChange = (content: string) => {
+  const handleChange = async (content: string) => {
     update({
       id: params.documentId,
       content,
@@ -60,7 +60,7 @@ const DocumentIdPage = ({params}: DocumentIdPageProps) => {
       <Cover url={document.coverImage} />
       <div className="mx-auto md:max-w-3xl lg:max-w-4xl">
         <Toolbar initialData={document} />
-        <Editor onChange={onChange} initialContent={document.content} />
+        <Editor onChange={handleChange} initialContent={document.content} />
       </div>
     </div>
   )

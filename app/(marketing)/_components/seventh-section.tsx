@@ -91,13 +91,13 @@ const SeventhSection = () => {
           Browse all templates <PiArrowRight className="ml-3 text-sm " />
         </div>
       </div>
-      <div className="mx-auto mt-8  grid gap-4  px-8  md:row-span-1 md:w-full md:grid-cols-2 md:px-16 xl:w-3/4 xl:grid-cols-4  xl:gap-6 xl:px-0 2xl:w-[55%]">
+      <div className="mx-auto mt-8 grid gap-4 px-8 md:row-span-1 md:w-full md:grid-cols-2 md:px-16 xl:w-3/4 xl:grid-cols-4 xl:gap-6 xl:px-0 2xl:w-[55%]">
         {items.map((item, index) => (
           <div
             key={index}
             className={`${
               index === 0
-                ? ' flex-col md:col-span-2  md:flex-row  xl:col-span-2 xl:row-span-3 xl:flex-col'
+                ? 'flex-col md:col-span-2 md:flex-row xl:col-span-2 xl:row-span-3 xl:flex-col'
                 : ''
             } flex rounded-xl bg-[#f6f5f4]  p-6 ${
               index === 0 ? 'justify-between' : ''

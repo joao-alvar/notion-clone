@@ -1,5 +1,6 @@
 'use client'
 
+import {useCallback} from 'react'
 import {useTheme} from 'next-themes'
 import {BlockNoteEditor, PartialBlock} from '@blocknote/core'
 import {useCreateBlockNote} from '@blocknote/react'
@@ -10,7 +11,7 @@ import '@blocknote/mantine/style.css'
 import {useEdgeStore} from '@/lib/edgestore'
 
 interface EditorProps {
-  onChange: (value: string) => void
+  onChange: (content: string) => void
   initialContent?: string
   editable?: boolean
 }
@@ -34,14 +35,20 @@ const Editor = ({onChange, initialContent, editable}: EditorProps) => {
     uploadFile: handleUpload,
   })
 
+  const uploadToDatabase = useCallback(() => {
+    if (onChange) {
+      setTimeout(() => {
+        onChange(JSON.stringify(editor.document))
+      }, 1000)
+    }
+  }, [editor, onChange])
+
   return (
     <div>
       <BlockNoteView
         editable={editable}
         editor={editor}
-        onChange={() => {
-          JSON.stringify(editor.document, null, 2)
-        }}
+        onChange={uploadToDatabase}
         theme={resolvedTheme === 'dark' ? 'dark' : 'light'}
       />
     </div>

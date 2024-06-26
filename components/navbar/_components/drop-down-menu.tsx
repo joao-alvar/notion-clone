@@ -57,7 +57,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = ({onClose}) => {
   }
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 top-0 h-screen w-full items-center justify-center bg-white px-4 xl:hidden">
+    <div className="fixed bottom-0 left-0 right-0 top-0 h-full w-full items-center justify-center overflow-auto bg-white px-4 xl:hidden">
       <Accordion
         defaultValue="item-1"
         className="
@@ -135,7 +135,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = ({onClose}) => {
             </Link>
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem className=" border-b" value="item-2">
+        <AccordionItem className="border-b" value="item-2">
           <AccordionTrigger>For Business</AccordionTrigger>
           <AccordionContent className="space-y-2">
             <Link
@@ -347,36 +347,21 @@ const DropdownMenu: React.FC<DropDownMenuProps> = ({onClose}) => {
 
         <Link
           href={'/pricing'}
-          className="
-            flex
-            flex-1
-            items-center 
-            justify-between
-     
-          
-            border-b
-            
-            py-4
-            "
+          className="flex flex-1 items-center justify-between border-b py-4"
         >
           Pricing
         </Link>
 
         <Link
           href={'/contact'}
-          className="
-            flex
-            flex-1
-            items-center 
-            justify-between
-            border-b py-4"
+          className="flex flex-1 items-center justify-between border-b py-4"
         >
           Request a demo
         </Link>
       </Accordion>
 
       <div className="pt-12">
-        <div className="  flex flex-col space-y-4 px-4">
+        <div className="mb-4 flex flex-col space-y-4 px-4">
           {isLoading && <Spinner />}
           {!isAuthenticated && !isLoading && (
             <>

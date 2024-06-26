@@ -21,17 +21,12 @@ const ThirdSection = () => {
         alt="Canva logo"
         width={1000}
         height={1000}
-        className="w-4/5 pt-10 
-                xl:w-1/3
-                xl:pt-10
-
-                
-                "
+        className="w-4/5 pt-10 xl:w-1/3 xl:pt-10"
       />
 
       <div
         className={cn(
-          'flex w-4/5 items-center justify-center px-8 pb-4 pt-10  text-center text-xl  xl:py-10  xl:text-2xl ',
+          'flex w-4/5 items-center justify-center px-8 pb-4 pt-10 text-center text-xl xl:py-10 xl:text-2xl',
           font.className
         )}
       >
@@ -45,11 +40,11 @@ const ThirdSection = () => {
           alt="Canva logo"
           width={1000}
           height={1000}
-          className="w-10 pt-2  xl:w-14 xl:pt-0 "
+          className="w-10 pt-2 xl:w-14 xl:pt-0"
         />
 
-        <div className=" text-center">
-          <div className="pt-4  text-sm font-medium">Rodrigo Hernandez</div>
+        <div className="text-center">
+          <div className="pt-4 text-sm font-medium">Rodrigo Hernandez</div>
           <div className="text-sm">Marketing Director, Palium Software</div>
         </div>
       </div>
