@@ -14,7 +14,7 @@ export const Heading = () => {
   return (
     <div
       className="flex flex-1 flex-col items-center
-    justify-center gap-y-8 px-6 pb-10 text-center md:justify-start"
+    justify-center gap-y-8 px-6 text-center md:justify-start"
     >
       <div className="max-w-5xl space-y-6">
         <h1 className="text-5xl font-semibold sm:text-5xl md:text-6xl">

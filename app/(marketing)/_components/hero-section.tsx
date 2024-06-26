@@ -85,7 +85,7 @@ const HeroSection = () => {
   const isSmallScreen = useMediaQuery({maxWidth: 767})
 
   return (
-    <div className="flex flex-col md:items-center ">
+    <div className="flex flex-col md:items-center">
       <div className="items-center justify-center pt-10 xl:pt-20">
         <Image
           src="/assets/ReadingSideDoodle.svg"
@@ -104,12 +104,12 @@ const HeroSection = () => {
                 className={`flex cursor-pointer p-1 md:p-8
                 ${
                   activeTab.name === tab.name
-                    ? 'flex items-center justify-center  rounded-md border-gray-200 bg-[#f6f5f4] p-1 md:rounded-xl md:border md:bg-white '
-                    : 'items-center   justify-center rounded-md p-1 hover:bg-[#eae7e7] md:bg-[#f6f5f4] xl:rounded-xl '
+                    ? 'flex items-center justify-center rounded-md border-gray-200 bg-[#f6f5f4] p-1 md:rounded-xl md:border md:bg-white'
+                    : 'items-center justify-center rounded-md p-1 hover:bg-[#eae7e7] md:bg-[#f6f5f4] xl:rounded-xl'
                 } `}
                 onClick={() => setActiveTab(tab)}
               >
-                <div className="mx-auto flex   flex-col items-center md:justify-center">
+                <div className="mx-auto flex flex-col items-center md:justify-center">
                   <div className="text-4xl md:flex">{tab.icon}</div>
                   <div className="mt-1 text-sm  font-semibold xl:text-lg">
                     {tab.name}
@@ -195,7 +195,7 @@ const HeroSection = () => {
       {/* Display content based on the active tab */}
       <div className="hidden w-3/4 px-8 py-10 md:flex md:px-0 2xl:w-[55%]">
         {activeTab && (
-          <div className=" w-full items-center justify-center space-x-6 hover:cursor-pointer md:flex">
+          <div className="w-full items-center justify-center space-x-6 hover:cursor-pointer md:flex">
             <Image
               src={activeTab.image}
               width={500}

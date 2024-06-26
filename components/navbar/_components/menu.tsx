@@ -68,7 +68,7 @@ export function Menu() {
           <NavigationMenuTrigger>Product</NavigationMenuTrigger>
           <NavigationMenuContent>
             <div className="flex">
-              <ul className="grid  border-r p-2  hover:cursor-pointer md:w-[400px] lg:w-[250px]">
+              <ul className="grid border-r p-2 hover:cursor-pointer md:w-[400px] lg:w-[250px]">
                 <div className="flex items-center gap-1 rounded-sm p-1 hover:bg-gray-400/10">
                   <PiBookOpenTextLight className="mr-2 text-2xl text-red-600" />
                   <div className="">
@@ -110,7 +110,7 @@ export function Menu() {
                 </div>
               </ul>
               <div>
-                <ul className="grid  border-r p-2  hover:cursor-pointer md:w-[400px] lg:w-[250px]">
+                <ul className="grid border-r p-2 hover:cursor-pointer md:w-[400px] lg:w-[250px]">
                   <div className="flex items-center gap-1 rounded-sm p-1 hover:bg-gray-400/10">
                     <div>
                       <a className="">Template gallery</a>
@@ -145,7 +145,7 @@ export function Menu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Download</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -162,7 +162,7 @@ export function Menu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -179,7 +179,7 @@ export function Menu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
