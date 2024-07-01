@@ -159,7 +159,7 @@ Siga esses passos para rodar o app localmente com facilidade.
 - Criar notas e páginas
   - Use o editor de markdown para criar e formatar notas. Organize-as usando páginas aninhadas.
 - Colabore em tempo real
-  - Compartilhe suas notas com outras pessoas e colabore em tempo real.
+  - Publique e compartilhe suas notas com outras pessoas e colabore em tempo real.
 - Faça o upload de arquivos
   - Compartilhe arquivos, adicione emojis e banners para suas notas.
 - Pesquisar
