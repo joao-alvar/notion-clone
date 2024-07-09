@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="flex w-full items-center justify-between gap-x-2 text-muted-foreground md:ml-auto md:justify-end">
         <Button variant="ghost" size="sm">
           <a
-            href="https://github.com/joao-alvar"
+            href="https://github.com/jvalvarenga"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -18,7 +18,7 @@ export const Footer = () => {
         </Button>
         <Button variant="ghost" size="sm">
           <a
-            href="https://victor-alvar.vercel.app"
+            href="https://joao-alvarenga.vercel.app"
             target="_blank"
             rel="noreferrer noopener"
           >
